@@ -21,7 +21,7 @@ export default function HomeScreen() {
 
   const filtered = useMemo(() => {
     if (query.trim().length === 0) {
-      return dictionaryData.sort((a, b) => a.term.localeCompare(b.term, 'pt-BR'));
+      return [...dictionaryData].sort((a, b) => a.term.localeCompare(b.term, 'pt-BR'));
     }
     const q = normalize(query.trim());
     return dictionaryData

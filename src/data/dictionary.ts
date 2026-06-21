@@ -261,7 +261,7 @@ export const dictionaryData: DictionaryEntry[] = [
     tags: ['expressão', 'moda'],
   },
   {
-    id: 'traveco',
+    id: 'travesti',
     term: 'Travesti',
     definition: 'Pessoa que se identifica com o gênero feminino, nascida com sexo biológico masculino. Termo que deve ser usado com respeito.',
     semantics: 'Substantivo feminino. Identidade de gênero.',
@@ -394,7 +394,7 @@ export const dictionaryData: DictionaryEntry[] = [
     tags: ['gíria', 'social'],
   },
   {
-    id: 'aliciar',
+    id: 'gongar',
     term: 'Gongar',
     definition: 'Eliminar, tirar, excluir. Também significa criticar negativamente ou reprovar.',
     semantics: 'Verbo. Referência ao gongo de eliminação.',

@@ -25,7 +25,7 @@ export const COLORS = {
   // Semantic tag colors
   tagIdentity: '#E40303',
   tagFashion: '#FF8C00',
-  tagExpression: '#FFED00',
+  tagExpression: '#B8A600',
   tagSocial: '#008026',
   tagSlang: '#004DFF',
   tagGeneral: '#750787',
