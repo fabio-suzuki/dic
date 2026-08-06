@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "Medidas",
+    "slug": "medidas-corporais",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "medidas",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.medidas.corporais"
+    },
+    "android": {
+      "package": "com.medidas.corporais",
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-splash-screen"
+    ]
+  }
+}

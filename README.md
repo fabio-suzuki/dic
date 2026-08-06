@@ -63,6 +63,11 @@ src/
 assets/              # Ícones e imagens
 ```
 
+## Outros apps neste repositório
+
+- [`medidas/`](./medidas) — **Medidas**: registro de medidas corporais em escala métrica, com
+  autosave enquanto digita, gráficos de evolução, insights e planos de treino/alimentação.
+
 ## Licença
 
 MIT
