@@ -1,5 +1,5 @@
 import React from 'react';
-import { Alert, FlatList, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Alert, FlatList, Platform, Pressable, StyleSheet, Text, View } from 'react-native';
 import { useRouter } from 'expo-router';
 import { FIELD_LABELS, FIELD_UNITS } from '../src/constants/fields';
 import { BORDER_RADIUS, COLORS, FONT_SIZES, SPACING } from '../src/constants/theme';
@@ -17,7 +17,13 @@ export default function HistoryScreen() {
   };
 
   const handleDelete = (record: MeasurementRecord) => {
-    Alert.alert('Excluir medição', `Remover o registro de ${formatDateBr(record.date)}?`, [
+    const message = `Remover o registro de ${formatDateBr(record.date)}?`;
+    if (Platform.OS === 'web') {
+      // Alert.alert com múltiplos botões não abre diálogo no react-native-web.
+      if (window.confirm(`Excluir medição\n\n${message}`)) deleteRecord(record.id);
+      return;
+    }
+    Alert.alert('Excluir medição', message, [
       { text: 'Cancelar', style: 'cancel' },
       { text: 'Excluir', style: 'destructive', onPress: () => deleteRecord(record.id) },
     ]);

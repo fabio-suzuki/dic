@@ -80,8 +80,8 @@ export default function ProfileScreen() {
 
       <Card title="Dados" subtitle="Tudo fica apenas neste aparelho">
         <Text style={styles.info}>
-          {records.length} medição{records.length === 1 ? '' : 'ões'} armazenada
-          {records.length === 1 ? '' : 's'} localmente.
+          {records.length} {records.length === 1 ? 'medição armazenada' : 'medições armazenadas'}{' '}
+          localmente.
         </Text>
         <Link href="/historico" style={styles.link}>
           Abrir histórico →
